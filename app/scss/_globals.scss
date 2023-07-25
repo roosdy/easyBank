@@ -25,6 +25,27 @@ body{
 
     }
 }
+//Text 
+h1, h2, h3{
+    margin-top: 0px;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
+
+}
+h1{
+    font-size: 2.31rem;
+    margin-bottom: 1.5rem;
+    }
+h2{
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+
+    @include breakpoint-up(large){
+    font-size: 2.25rem;
+
+    }
+}
 a, a:visited, a:hover{
     text-decoration: none;
 }
@@ -35,24 +56,29 @@ a, a:visited, a:hover{
 
 
     &--pall{
-        padding-top: 2.25rem;
+        padding-top: 4.375rem;
         padding-right: 1.5rem;
-        padding-bottom: 2.25rem;
+        padding-bottom: 4.375rem;
         padding-left: 1.5rem;
+
+        @include breakpoint-up(large){
+            padding-top:6rem;
+            padding-bottom: 6rem;
+        }
     }
     &--py{
-        padding-top: 2.25rem;
-        padding-bottom: 2.25rem;
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
     }
     &--px{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
     &--pt{
-        padding-top: 2.25rem;
+        padding-top: 4.375rem;
     }
     &--pb{
-        padding-bottom: 2.25rem;
+        padding-bottom: 4.375rem;
     }
     &--pl{
         padding-left: 1.5rem;
